@@ -1,0 +1,20 @@
+// Special function of the number function //
+
+/*Number Methods:
+
+Convert numbers to string - toString()
+Convert variable to numebrs  - Number() */
+
+// program to convert a number to a string //
+
+var aBigNumber = 19212956542565821325
+
+var conertedIntoString = aBigNumber.toString();
+alert(typeof(conertedIntoString))
+
+// program to conert a string to a number //
+
+var someNumber = "5454"
+
+var convertedToNumber = Number(someNumber)
+alert (typeof(convertedToNumber))

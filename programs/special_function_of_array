@@ -1,0 +1,65 @@
+//
+/*Array Methods :
+
+Convert array to string - toString()
+Pop and Push - pop(), push()
+Removing the first Element - shift()
+Add new element at beginning - unshift()
+Changing element at an index - it’s a simple assignment
+Deleting elements at an Index
+Merging two arrays
+*/
+
+//Program to convert an array to string //
+var vegetables = [ "carrots","Potatoes","Tomatos","pumpkin","Spinach","Turnips","Mushrooms","Broccoli"];
+
+var convertedString = vegetables.toString;
+
+alert(convertedString)
+alert(typeof(convertedString));
+
+//program to convert to  push //
+
+var vegetables = [ "carrots","Potatoes","Tomatos","pumpkin","Spinach","Turnips","Mushrooms","Broccoli"];
+
+vegetables.push("Ginger"); // ginger will be pushed to the end of the array
+alert(vegetables)
+
+//program to convert to  pop //
+
+var vegetables = [ "carrots","Potatoes","Tomatos","pumpkin","Spinach","Turnips","Mushrooms","Broccoli"];
+
+vegetables.pop("Ginger"); // ginger will be poped out of the array
+alert(vegetables)
+
+// program to use shift  and Unshift to edit the start of the array //
+
+var vegetables = [ "carrots","Potatoes","Tomatos","pumpkin","Spinach","Turnips","Mushrooms","Broccoli"];
+
+vegetables.shift()
+alert(vegetables)
+
+vegetables.unshift("ginger")
+alert(vegetables);
+
+// program to change an element in an array //
+
+var vegetables = [ "carrots","Potatoes","Tomatos","pumpkin","Spinach","Turnips","Mushrooms","Broccoli"];
+
+vegetables[2]= "lettuce"
+alert(vegetables)
+
+// program to delete an element from the array //
+
+var vegetables = [ "carrots","Potatoes","Tomatos","pumpkin","Spinach","Turnips","Mushrooms","Broccoli"];
+
+delete vegetables[1];
+alert(vegetables)
+
+// program to merge two arrays//
+
+var vegetables = [ "carrots","Potatoes","Tomatos","pumpkin","Spinach","Turnips","Mushrooms","Broccoli"];
+
+var fruits = ["Apple","Orange","Banana"]
+var mergedArray = vegetables.concat(fruits)
+alert(mergedArray)

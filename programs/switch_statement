@@ -1,0 +1,28 @@
+// Switch Example//
+
+var grade = window.prompt(
+    'what is your grade?')
+
+alert (grade)
+
+var(result)
+
+switch (grade) {
+    case 'A':
+        result = 'You have excellent marks'
+        break
+    case 'B':
+        result = 'You have performed good'
+        break
+    case 'C':
+        result = 'You have just passed'
+        break
+    case 'D':
+        result ='You have failed'
+        break
+    default:
+    result = 'This is not a valid input'
+}
+
+alert(result);
+//end of switch examples

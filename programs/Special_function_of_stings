@@ -1,0 +1,87 @@
+
+/* String Function:
+
+To find the length of the string :  string.length property
+Finding a string inside of a string : indexOf
+Extracting parts of the string : subtr or slice
+Replace a part of the string - replace
+Changing Upper case and Lower Case - toUpperCase, toLowerCase
+Merging to String :  concat
+Converting a string to Array - Split */
+
+
+// Using th length function//
+var myString = "This is a very big sentence and you can learn a lot about "
+
+var myStringLength = myString.length
+alert(myStringLength)
+
+//Using the indexOf function //
+var myString = "This is a very big sentence and you can learn a lot about "
+
+var indexInString = myString.indexOf("big")
+alert(indexInString)
+
+//extracting parts of the string //
+var myString = "This is a very big sentence and you can learn a lot about "
+
+var aSubstring = myString.slice(10,20) // so here the 10 is the starting postion of the string to be searched from and '20' is the end postion of the string
+alert(aSubstring)
+
+    // if a part needs to be searched without kowng the postion of the string 
+    var indexOfBig = myString.indexOf("big")
+    var aSubstring = myString.slice(indexOfBig,indexOfBig+3);
+
+// program by using the REPLACE special function //
+
+var myString = "This is a very big sentence and you can learn a lot about "
+var replacedString = myString.replace("big sentence","Short sentence")
+alert(replacedString);
+
+// to change to uppercase and to lowercase //
+var myString = "This is a very big sentence and you can learn a lot about "
+alert(myString.toUpperCase())
+alert(myString.toLowerCase())
+
+// program to cncat two string //
+var myString = "This is a very big sentence and you can learn a lot about "
+
+var anotherSentence = "Are you ready?"
+var mergedString =  myString.concat(anotherSentence)
+alert(mergedString)
+
+//Program using the split special function
+
+var myString = "This is a very big sentence and you can learn a lot about "
+
+var sentenceToArray = myString.split(" ");
+alert(sentenceToArray)
+alert(Array.isArray(sentenceToArray))
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

@@ -1,0 +1,102 @@
+
+// For block scope programming//
+ Always use the 'let' keyword instead of the var keyword, due to the issues shown by var keyword when there is no predeclaration before the console.log() statement.
+ 
+ e.g:
+ console.log(carPrice)
+ var carPrice= 200000;  // this statement will throw an error and will show as undefined//
+ 
+ instead:
+ 
+ let carPrice=200000;
+ console.log(carPrice)
+ 
+ ==========================================================================================
+ 
+ CONST keyword:
+ 
+ e.g:
+ let oldUser = true;
+	const discountPercentage = 10;
+	if (oldUser == true)
+	{
+	const discountPercentage =20;
+	console.log("oldUser discountPercentage = "+discountPercentage);
+	}
+	console.log("newUser discountPercentage = "+discountPercentage);
+	
+==========================================================================================
+
+Arrow Functions:
+
+//normal use of functions:
+
+function  multiply(x,y)
+{
+return x*y;
+}
+console.log(multiply(4,8))
+
+
+
+var generateEmail = function(name,message){
+var emailMessage = 'Hi '+name+"\n"+"This is the message we have for you - \n"
+					+message+"\n copyright @edwisor 2018"
+return emailMessage;
+}
+console.log(generateEmail("aditya","welcome to edwisor" )
+
+using arrow function:
+
+	let multiply = (x,y) =>{
+	return x*y;
+	}
+	
+	console.log(multiply(4,8))
+
+==========================================================================================
+
+// Default Parameters//
+
+E.G :
+
+function multiply(x,y=2) // here y=2 is the default parameter
+{
+console.log(x)
+console.log(y)
+return x*y;
+}
+
+console.log(multiply(4))
+==========================================================================================
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

@@ -1,0 +1,23 @@
+var singleUser = {name:"Naveen",
+                  email:"naveenkaka621@gmail.com",
+                  mobileNumber:8861640699}
+
+for(x in singleUser)
+alert(singleUser[x])
+}
+
+//progrm to find the customer data.
+
+var cutomer = [{
+
+    'custId':'123',
+    'signedUpDate':'2018-01-15'},
+    {
+        'custId':'456',
+        'signedUpDate':'2018-02-14'
+    }
+]
+for(x in customer)
+{
+    alert(customer[x].custId)
+}

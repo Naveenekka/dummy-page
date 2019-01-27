@@ -1,0 +1,171 @@
+
+Introduction to advance web.
+
+files such as the videos and the images file if stored in our server it will slow down the server.
+
+CDN : CDN is short for content delivery network. A content delivery network is a system of distributed servers that deliver pages and otherweb content to a user, 
+		based on the geographic location of the user, the origin of the webpage and the content delivery server.
+		
+API : API is structure how data is exchanged b/w a database and any software accessing it.
+		but basically API is a URL which when the fronted hits it then it get the information from the backend and shoots at the pages.
+		
+
+		// Example of objects//
+//food item in a amenu
+var foodItem = {
+"itemType": "coffee",
+"itemName": "Espresso",
+"itemQuantity": "Large",
+"cost":"230",
+"isAvailable":"true",
+"quantityAvailable":20
+}	
+
+var NameOfTheItem = foodItem.itemName;
+
+alert(NameOfTheItem);
+
+//examples of arrays//
+// JS- Arrays//
+//basic synatx
+//** var myArr = []
+
+var popularSports = ["soccer", "basketball", "cricket", "tennis", "atheletics", "rugby", "formula 1", "boxing", "ice hockey", "volleyball"];
+
+//for number arrays
+
+var aNumberOnADice = [1,2,3,4,5,6];
+var mostPopularSports = popularSports[0];
+var theNumberIs = aNumberOnADice[3]
+alert (mostPopularSports)
+alert (theNumberIs)
+
+
+
+var popularSports = ["soccer", "basketball", "cricket", "tennis", "atheletics", "rugby", "formula 1", "boxing", "ice hockey", "volleyball"];
+
+var mostPopularSports = popularSports.length; // the .length prints the length of the array.
+alert (mostPopularSports)
+
+Let's look at a few more real life examples -
+https://github.com/toddmotto/public-apis
+
+
+
+// for array of objects:
+//define the array  of objects:
+//now to display it:
+=============================================
+var firstUser = users[1];
+var firstName = firstUser.firstName;
+alert(firstName);
+
+OR
+var firstUser = users[1].firstName;
+alert(firstName);
+
+=======================================================================================
+//Operators: 
+
+var a = 10;
+var b = 5;
+var c = 3;
+var d = a%c;
+alert(d)
+=======================================================================================
+//Operators: 
+
+var a = "Naveen";
+var b = "Ekka";
+var c = 3;
+var d = a+b;
+alert(d)
+=======================================================================================
+//program with various operators
+var a = 10;
+var b = "10";
+var x = "Naveen";
+var y = "Ekka";
+var z = "Naveen";
+
+alert (typeof(a)); //to determine the type of operator.
+alert (a===x); // to compare the data and the type of operator.
+=======================================================================================
+
+//ways to differentiate b/w array and objects
+var a = {"firstName":"aditya", "lastname":"kumar"};
+var b = ["apple","orange","banana"];
+
+alert (Array.isArray(b)); //to verify if it an array.
+alert (typeof(a)) // to verify if it is an object.
+
+=======================================================================================
+//program to check whether a student is a topper or not//
+var marksObtained = window.prompt('Please enter the marks obtained');
+
+if (marksObtained == undefined || marksObtained == null || marksObtained == '')
+{alert('Invalid Input');
+} else if (marksObtained <0 || marksObtained >100){
+	alert('Input a number between 0 to 100')
+} else {
+	//calculating the percentage
+	marksObtained = Number(marksObtained)
+	var totalMarks = 100;
+	var percentagOfMarksObtaines = (marksObtained/totalMarks)*100;
+	//end of calculating the percentage
+if(percentagOfMarksObtaines > 90)
+{
+	isTopper = true
+}else {
+	isTopper = false
+}
+
+//Else use of ternary operator//
+// isTopper = (percentageOfMarksObtaines >90)?true:false
+
+alert(isTopper);
+}
+
+//End Of Program //
+=======================================================================================
+
+//Special Function //
+
+string data types provides a lot of important methods and properties as well
+
+- to find the length of the string - string.length 
+- to find the index of the string inside a string :  indexOf
+- Extracting parts of the string - substr or slice(start_position_of string, end_position_of_string)
+- Replace a part of the string - replace
+- Changing upper case and lowercase - toUpperCase, toLowerCase
+- Merging two string - concat
+- Converting a string to Array - split
+
+=======================================================================================
+
+//Number data types has a few handy methods //
+
+Convert Number to string - toString()
+Convert variables to Numbers - Number() 
+=======================================================================================
+
+//Array methods to remember //
+convert array to string - toString()
+pop and Push - pop(), push()
+Removing the first element - shift()
+add new element at the beginning - unshift()
+changing element at an index - its a simple assignment
+Deleting elements at an index
+merging of two arrays
+
+=======================================================================================
+
+// Date methods are the most complete ones //
+
+getDate()	getDay()	getFullYear()
+getHours()	getMilliseconds()	getMinutes()
+getMonth()	getSeconds()	getTime()
+=======================================================================================
+
+to validate the JSON:
+- Just google "online json validation" and you will be able to find a bunch of them.
